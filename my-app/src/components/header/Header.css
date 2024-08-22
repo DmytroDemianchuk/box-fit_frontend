@@ -1,0 +1,198 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.header-logo .logo {
+    height: 70px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e60000;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-actions img {
+    height: 20px;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    height: 20px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e60000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+}
+
+.dropdown-menu {
+    background-color: #111;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+}
+
+/* Sidebar (Sidenav) */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+.sidenav.open {
+    width: 250px; /* Adjust the width as needed */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidenav-logo {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidenav-logo .logo {
+    height: 100px; /* Adjust size as needed */
+}
+
+.sidenav-content {
+    padding: 20px;
+}
+
+.category-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidenav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidenav-link-text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #e60000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    margin-left: 20px;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submenu-item:hover {
+    color: #e60000;
+}

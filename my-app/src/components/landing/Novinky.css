@@ -1,0 +1,135 @@
+/* Novinky.css */
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .text_36_cerna_mont_extra {
+    font-size: 36px;
+    font-weight: 900;
+    color: #333;
+  }
+  
+  .tlacitko_16_cerne {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .tlacitko_16_cerne:hover {
+    color: #000;
+  }
+  
+  .text_20_cervena_mont_bold {
+    font-size: 20px;
+    color: #c8102e;
+    font-weight: 700;
+  }
+  
+  .text_16_cerna_mont_semi {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .sleva_top_position {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  
+  .sleva_top_position_top40 {
+    top: 40px;
+  }
+  
+  .noskladem {
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+  
+  .skladem {
+    background-color: rgba(0, 255, 0, 0.7);
+  }
+  
+  .pozadi_produkt {
+    position: relative;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .caption:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .thumbnail {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .thumbnail .flex-text {
+    margin-top: 15px;
+  }
+  
+  .thumbnail .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  
+  .pb-5 {
+    padding-bottom: 3rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .d-md-block {
+    display: block;
+  }
+  
+  @media (max-width: 767px) {
+    .d-md-none {
+      display: block;
+    }
+  
+    .d-none {
+      display: none;
+    }
+  }
+  

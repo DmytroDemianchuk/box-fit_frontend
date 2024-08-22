@@ -1,0 +1,69 @@
+/* Reset container and row padding/margin */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row.no-gutters {
+    margin: 0;
+    padding: 0;
+}
+
+/* Info Box Styling */
+.info-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* This maintains the aspect ratio */
+    overflow: hidden;
+    border-radius: 0; /* Ensure sharp corners */
+}
+
+/* Background Images Styling */
+.info-box-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0; /* Ensure sharp corners */
+}
+
+/* Inner Box Styling */
+.info-box-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay effect */
+    border-radius: 0; /* Ensure sharp corners */
+}
+
+/* Text Styling */
+.text_28_bila_mont_extra {
+    font-size: 28px;
+    color: white;
+    font-weight: 800;
+}
+
+.text_56_cerna_mont_extra {
+    font-size: 56px;
+    color: black;
+    font-weight: 800;
+}
+
+.text_16_seda_mont {
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+}
+
+/* Column Styling */
+.col-12.col-sm-6.col-xl-3 {
+    padding: 0;
+}

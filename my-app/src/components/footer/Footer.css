@@ -1,0 +1,101 @@
+/* General Footer Styles */
+footer {
+    padding: 20px 0;
+    background-color: #000; /* Black background for footer */
+    color: #fff; /* White text color */
+  }
+  
+  /* Logo Footer */
+  .logo_footer img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Contact Section */
+  .text_20_bila_mont_semi {
+    font-size: 20px;
+    font-weight: 600; /* Semi-bold */
+    color: #fff;
+  }
+  
+  .bg-seda_footer {
+    background-color: #777; /* Light grey background for contact sections */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .text_18_bila_mont {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .bg-cervena_footer {
+    background-color: #e53e3e; /* Red background for icons */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer_center {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Categories Section */
+  .text_20_bila_mont_semi {
+    font-size: 20px;
+    font-weight: 600; /* Semi-bold */
+    color: #fff;
+  }
+  
+  .text_16_bila_mont_semi_link {
+    font-size: 16px;
+    font-weight: 600; /* Semi-bold */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .text_16_bila_mont_semi_link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Address Section */
+  .text_16_bila_mont_semi {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  iframe {
+    border: 0;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Gym Operating Hours Section */
+  .tlacitko_16_cervene {
+    font-size: 16px;
+    color: #e53e3e; /* Red color for button text */
+    text-decoration: none;
+    border: 1px solid #e53e3e;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  .tlacitko_16_cervene:hover {
+    background-color: #e53e3e;
+    color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .col-lg-3 {
+      margin-bottom: 20px;
+    }
+  
+    iframe {
+      max-width: 100%;
+    }
+  }
+  

@@ -9,111 +9,83 @@ import uvod_ron from '../../images/uvod_ron.png';
 import red_bg from '../../images/red_bg.jpg';
 import sortiment1 from '../../images/sortiment1.jpg';
 
+const items = [
+  {
+    title: 'DOPLŇKY STRAVY',
+    image: sortiment1,
+    link: 'doplnky-stravy',
+    buttonText: 'ZJISTIT VÍCE',
+    buttonColor: 'red',
+  },
+  {
+    image: uvod_protein,
+    alt: 'Protein',
+  },
+  {
+    title: 'BOJOVÉ SPORTY',
+    image: red_bg,
+    link: 'bojove-sporty',
+    buttonText: 'ZJISTIT VÍCE',
+    buttonColor: 'black',
+  },
+  {
+    image: uvod_holene,
+    alt: 'Holene',
+  },
+  {
+    image: uvod_rukavice,
+    alt: 'Rukavice',
+  },
+  {
+    title: 'FITNESS VYBAVENÍ',
+    image: red_bg,
+    link: 'fitness-vybaveni',
+    buttonText: 'ZJISTIT VÍCE',
+    buttonColor: 'black',
+  },
+  {
+    image: uvod_ron,
+    alt: 'Ron',
+  },
+  {
+    title: 'OBLEČENÍ A DOPLŇKY',
+    image: sortiment1,
+    link: 'obleceni-doplnky',
+    buttonText: 'ZJISTIT VÍCE',
+    buttonColor: 'red',
+  },
+];
+
 const Asortiment = () => {
   return (
     <div className='container-fluid no-gutters'>
       <div className='row justify-content-center mt-5'>
         <h1 className='header-title'>NÁŠ SORTIMENT</h1>
       </div>
-
       <div className='row no-gutters'>
-        
-        {/* Box 1 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div
-              className='info-box-bg'
-              style={{ backgroundImage: `url(${sortiment1})` }}
-            ></div>
-            <div className='info-box-inner'>
-              <div className='box-title text_28_bila_mont_extra'>DOPLŇKY STRAVY</div>
-              <a href="doplnky-stravy" className='button red mt-4'>ZJISTIT VÍCE</a>
+        {items.map((item, index) => (
+          <div key={index} className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
+            <div className='info-box'>
+              <div
+                className='info-box-bg'
+                style={{ backgroundImage: `url(${item.image})` }}
+              ></div>
+              <div className='info-box-inner'>
+                {item.title && (
+                  <>
+                    <div className='box-title text_28_bila_mont_extra'>{item.title}</div>
+                    {item.link && (
+                      <a href={item.link} className={`button ${item.buttonColor} mt-4`}>
+                        {item.buttonText}
+                      </a>
+                    )}
+                  </>
+                )}
+                {!item.title && <img src={item.image} alt={item.alt} className='box-image' />}
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Box 2 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div className='info-box-bg bg-gray'></div>
-            <div className='info-box-inner'>
-              <img src={uvod_protein} className='box-image' alt="Protein" />
-            </div>
-          </div>
-        </div>
-
-        {/* Box 3 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div
-              className='info-box-bg'
-              style={{ backgroundImage: `url(${red_bg})` }}
-            ></div>
-            <div className='info-box-inner'>
-              <div className='box-title text_28_bila_mont_extra'>BOJOVÉ SPORTY</div>
-              <a href="bojove-sporty" className='button black mt-4'>ZJISTIT VÍCE</a>
-            </div>
-          </div>
-        </div>
-
-        {/* Box 4 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div className='info-box-bg bg-gray'></div>
-            <div className='info-box-inner'>
-              <img src={uvod_holene} className='box-image' alt="Holene" />
-            </div>
-          </div>
-        </div>
-
-        {/* Box 5 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div className='info-box-bg bg-gray'></div>
-            <div className='info-box-inner'>
-              <img src={uvod_rukavice} className='box-image' alt="Rukavice" />
-            </div>
-          </div>
-        </div>
-
-        {/* Box 6 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div
-              className='info-box-bg'
-              style={{ backgroundImage: `url(${red_bg})` }}
-            ></div>
-            <div className='info-box-inner'>
-              <div className='box-title text_28_bila_mont_extra'>FITNESS VYBAVENÍ</div>
-              <a href="fitness-vybaveni" className='button black mt-4'>ZJISTIT VÍCE</a>
-            </div>
-          </div>
-        </div>
-
-        {/* Box 7 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div className='info-box-bg bg-gray'></div>
-            <div className='info-box-inner'>
-              <img src={uvod_ron} className='box-image' alt="Ron" />
-            </div>
-          </div>
-        </div>
-
-        {/* Box 8 */}
-        <div className='col-12 col-sm-6 col-md-4 col-lg-3 info-box-container'>
-          <div className='info-box'>
-            <div
-              className='info-box-bg'
-              style={{ backgroundImage: `url(${sortiment1})` }}
-            ></div>
-            <div className='info-box-inner'>
-              <div className='box-title text_28_bila_mont_extra'>OBLEČENÍ A DOPLŇKY</div>
-              <a href="obleceni-doplnky" className='button red mt-4'>ZJISTIT VÍCE</a>
-            </div>
-          </div>
-        </div>
-
+        ))}
       </div>
     </div>
   );

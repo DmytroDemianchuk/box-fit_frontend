@@ -1,0 +1,55 @@
+.container-fluid.p-0 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text_56_cerna_mont_extra {
+    font-size: 56px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+  }
+  
+  .button-black {
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-black:hover {
+    background-color: #333;
+  }
+  
+  .partner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .partner-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 576px) {
+    .partner-box {
+      padding: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .partner-box {
+      padding: 40px;
+    }
+  }
+  
